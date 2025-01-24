@@ -16,7 +16,7 @@ resource "azurerm_container_group" "aci" {
 
   container {
     name   = "mycontainer"
-    image  = "adityakeshav/flask-app:1"  
+    image  = "adityakeshav/flask-app:0.0.4"  
     cpu    = "0.5"
     memory = "1.5"
 
