@@ -19,11 +19,11 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/myflaskapp:${{ github.sha }} ./app
+          docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/myflaskapp:1 ./app
 
       - name: Push Docker image to Docker Hub
         run: |
-          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/myflaskapp:${{ github.sha }}
+          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/myflaskapp:1
 
   deploy:
     runs-on: ubuntu-latest
