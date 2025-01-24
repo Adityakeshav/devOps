@@ -16,7 +16,7 @@ resource "azurerm_container_group" "aci" {
 
   container {
     name   = "mycontainer"
-    image  = "adityakeshav/flask-app:0.0.3"  
+    image = "${{ secrets.DOCKER_HUB_USERNAME }}/myflaskapp:${{ github.sha }}"  
     cpu    = "0.5"
     memory = "1.5"
 
