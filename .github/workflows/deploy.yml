@@ -54,4 +54,4 @@ jobs:
 
       - name: Deploy to Azure Container Instance
         working-directory: ./terraform  
-        run: terraform apply -auto-approve -var "docker_image=${{ secrets.DOCKER_HUB_USERNAME }}/flask-app:0.0.4"
+        run: terraform apply -auto-approve
