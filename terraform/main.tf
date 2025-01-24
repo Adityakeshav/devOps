@@ -4,7 +4,7 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "rg" {
   name     = "myResourceGroup"
-  location = "Central India"  # Updated to Central India
+  location = "Central India"  
 }
 
 resource "azurerm_container_group" "aci" {
@@ -16,7 +16,7 @@ resource "azurerm_container_group" "aci" {
 
   container {
     name   = "mycontainer"
-    image  = "adityakeshav/flask-app:0.0.3"  # Replace with your Docker image
+    image  = "adityakeshav/flask-app:0.0.3"  
     cpu    = "0.5"
     memory = "1.5"
 
