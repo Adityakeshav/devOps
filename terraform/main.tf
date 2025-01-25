@@ -2,9 +2,10 @@ provider "azurerm" {
   features {}
   subscription_id = var.subscription_id
 }
+
 resource "azurerm_resource_group" "rg" {
   name     = "myResourceGroup"
-  location = "Central India"  
+  location = "Central India"
 }
 
 resource "azurerm_container_group" "aci" {
@@ -16,7 +17,7 @@ resource "azurerm_container_group" "aci" {
 
   container {
     name   = "mycontainer"
-    image  = var.docker_image  
+    image  = var.docker_image
     cpu    = "0.5"
     memory = "1.5"
 
