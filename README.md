@@ -40,3 +40,12 @@ Before running this project, ensure you have the following:
 
 4. **Terraform**:
    - Terraform installed locally (optional, for testing).
+  
+   ## **Setup Instructions**
+
+### **1. Clone the Repository**
+Clone this repository to your local machine:
+
+```bash
+git clone git@github.com:Adityakeshav/devOps.git
+cd devOps
