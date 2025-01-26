@@ -49,3 +49,11 @@ Clone this repository to your local machine:
 ```bash
 git clone git@github.com:Adityakeshav/devOps.git
 cd devOps
+
+
+
+### **Access the Deployed App**
+
+IP Address: http://20.235.226.56:5000/
+
+Custom Domain: http://devops.adityakeshav.tech
